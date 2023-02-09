@@ -10,8 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 
-@Entity
 @Data
+@Entity
 public class ImageModel {
 
     @Id
@@ -20,7 +20,7 @@ public class ImageModel {
     @Column(nullable = false)
     private String name;
     @Lob
-    @Column(columnDefinition = "LONGBLOB")
+    @Column()
     private byte[] imageBytes;
     @JsonIgnore
     private Long userId;
