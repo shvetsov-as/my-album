@@ -66,4 +66,5 @@ public class JWTTokenProvider {
         String id = (String) claims.get("id");
         return Long.parseLong(id);
     }
+
 }
